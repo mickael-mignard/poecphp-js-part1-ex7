@@ -1,7 +1,7 @@
 
 function calculer(){
-    var pointure = document.getElementById("pointure").value;
-    var dateNaissance = document.getElementById("dateNaissance").value;
+    let pointure = document.getElementById("pointure").value;
+    let dateNaissance = document.getElementById("dateNaissance").value;
     
     resultat = (pointure * 2 + 5) * 50 - dateNaissance + 1766;
 
@@ -10,8 +10,5 @@ function calculer(){
 
 
 function afficherResultat(){
-    document.getElementById('resultat').innerHTML = calculer();
-    console.log(resultat);
-
-
+    document.getElementById('resultat').innerHTML = calculer();   
 }
